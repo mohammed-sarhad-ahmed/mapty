@@ -380,7 +380,7 @@ class App {
     try {
       const [lat, lag] = workout.coords;
       const TheWeatherDataFromTheAjaxCall = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=d5cf23fdd8e343abac422716231207&q=${lat},${lag}&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=d5cf23fdd8e343abac422716231207&q=${lat},${lag}&aqi=no`
       );
       if (!TheWeatherDataFromTheAjaxCall.ok)
         throw new Error('the data was not found');
